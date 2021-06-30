@@ -1,0 +1,117 @@
+/* tablet */
+@media screen and (max-width: 768px) {
+    /* cabeçalho */
+    nav.navbar {
+        justify-content: flex-end;
+    }
+
+    nav.navbar .group-left {
+        display: none;
+    }
+
+    /* principal capa */
+    div.banner {
+        height: 50vh;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 10%, rgba(24,24,24,0.1) 60%), url('../img/capa1.jpg');
+        background-size: cover;
+        background-position-x:right;
+    }
+
+    div.logo-serie {
+        width: 40%;
+        top: 10%;
+        left: 5%;
+    }
+
+    div.info {
+        width: 55%;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+    }
+
+    p.buttons {
+        top: 80%;
+        left: 5%;
+    }
+
+    /* principal carrossel */
+    div.carousel-info {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* rodapé */
+    div.nav-group {
+        width: 100%;
+    }
+}
+
+/* celular */
+@media screen and (max-width: 425px) {
+    /* cabeçalho */
+    div.title {
+        width: 38px;
+        margin-top: 0.70em;
+        margin-right: 0.70em;
+    }
+    
+    div.title .logo-max {
+        display: none;
+    }
+
+    div.title .logo-min {
+        display: inline;
+    }
+
+    /* principal capa */
+    div.banner {
+        height: 30vh;
+        background: url('../img/capa2.jpg');
+        background-size: cover;
+        background-position-x: left;
+    }
+
+    div.logo-serie {
+        display: none;
+    }
+
+    div.info {
+        width: 100%;
+        position: unset;
+        padding-top: 3%;
+    }
+
+    h1.info-title,
+    p.info-subtitle,
+    p.info-synopsis  {
+        margin-bottom: 5%;
+    }
+
+    p.buttons {
+        position: unset;
+        margin: 10% 0;
+        justify-content: center;
+    }
+
+    a.button-add {
+        display: none;
+    }
+
+    /* principal carrossel */
+    div.carousel-info {
+        margin: 5% 0;
+        padding: 5% 0;
+        text-align: left;
+    }
+
+    div.carousel-info h2 {
+        margin-bottom: 3%;
+    }
+
+    /* rodapé */
+    div.nav-group {
+        flex-direction: column;
+    }
+}
